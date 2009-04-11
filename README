@@ -2,3 +2,35 @@ Author  : Zekeriya "zekUs" KOÇ
 e-mail  : zekzekus@gmail.com
 
 desc    : My experimental work on SBCL + Hunchentoot
+
+how to try   : 
+
+If you want to try the code you must have sbcl and 
+hunchentoot, cl-who packages with it. you can use asdf to load 
+my source. 
+
+create a symlink to the hunc-exp.asd from your sbcl systems directory. 
+
+generally this must work:
+
+$ pwd
+/home/zekus/hunchentoot-experiments/
+
+$ cd .sbcl/systems
+
+$ ln -s /home/zekus/hunchentoot-experiments/hunc-exp.asd .
+
+after that you can load the package with:
+
+CL-USER> (require :hunc-exp)
+CL-USER> (in-package :hunc-exp)
+HUNC-EXP>
+
+then;
+
+HUNC-EXP> (init) 
+
+check the url: http://localhost:8080/hello-world
+
+
+
