@@ -16,7 +16,7 @@ generally this must work:
 $ pwd
 /home/zekus/hunchentoot-experiments/
 
-$ cd .sbcl/systems
+$ cd ~/.sbcl/systems
 
 $ ln -s /home/zekus/hunchentoot-experiments/hunc-exp.asd .
 
