@@ -8,8 +8,8 @@
   (start *server*))
 
 ;; add a dispatcher for our hello-world function. this means every
-;; requested url starts with /hello-world will invokde hello-world function.
-(push (create-regex-dispatcher "^/hello-world$" 'hello-world) *dispatch-table*)
+;; requested made http://localhost:8080/ will invokde hello-world function.
+(push (create-regex-dispatcher "^/$" 'hello-world) *dispatch-table*)
 
 ;; it's time to say "Hello World!!!"
 (defun hello-world ()
